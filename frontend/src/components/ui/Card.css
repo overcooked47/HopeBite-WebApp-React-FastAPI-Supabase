@@ -1,0 +1,116 @@
+.card {
+  background: var(--white);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  transition: all var(--transition);
+}
+
+.card-default {
+  border: 1px solid var(--gray-100);
+}
+
+.card-elevated {
+  box-shadow: var(--shadow-lg);
+}
+
+.card-outlined {
+  border: 2px solid var(--gray-200);
+  box-shadow: none;
+}
+
+.card-gradient {
+  background: var(--gradient-primary);
+  color: white;
+}
+
+.card-gradient .card-header,
+.card-gradient .card-body,
+.card-gradient .card-footer {
+  color: white;
+}
+
+.card-purple {
+  background: var(--primary-purple-50);
+  border: 1px solid var(--primary-purple-100);
+}
+
+.card-orange {
+  background: var(--secondary-orange-50);
+  border: 1px solid var(--secondary-orange-100);
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-xl);
+}
+
+.card-clickable {
+  cursor: pointer;
+}
+
+.card-padding-none {
+  padding: 0;
+}
+
+.card-padding-sm {
+  padding: 1rem;
+}
+
+.card-padding-md {
+  padding: 1.5rem;
+}
+
+.card-padding-lg {
+  padding: 2rem;
+}
+
+.card-header {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--gray-100);
+  margin-bottom: 1rem;
+}
+
+.card-body {
+  flex: 1;
+}
+
+.card-footer {
+  padding-top: 1rem;
+  border-top: 1px solid var(--gray-100);
+  margin-top: 1rem;
+}
+
+.card-image {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition);
+}
+
+.card-hover:hover .card-image img {
+  transform: scale(1.05);
+}
+
+.card-padding-sm > .card-image:first-child,
+.card-padding-md > .card-image:first-child,
+.card-padding-lg > .card-image:first-child {
+  margin: -1rem -1rem 1rem -1rem;
+  width: calc(100% + 2rem);
+}
+
+.card-padding-md > .card-image:first-child {
+  margin: -1.5rem -1.5rem 1.5rem -1.5rem;
+  width: calc(100% + 3rem);
+}
+
+.card-padding-lg > .card-image:first-child {
+  margin: -2rem -2rem 2rem -2rem;
+  width: calc(100% + 4rem);
+}

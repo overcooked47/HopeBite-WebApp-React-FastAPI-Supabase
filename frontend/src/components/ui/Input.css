@@ -1,0 +1,109 @@
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.input-full {
+  width: 100%;
+}
+
+.input-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--gray-700);
+}
+
+.input-required {
+  color: var(--error);
+  margin-left: 0.25rem;
+}
+
+.input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: var(--white);
+  border: 2px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  transition: all var(--transition-fast);
+}
+
+.input-container:focus-within {
+  border-color: var(--primary-purple);
+  box-shadow: 0 0 0 3px var(--primary-purple-100);
+}
+
+.input-container.input-error {
+  border-color: var(--error);
+}
+
+.input-container.input-error:focus-within {
+  box-shadow: 0 0 0 3px var(--error-light);
+}
+
+.input-field {
+  flex: 1;
+  padding: 0.875rem 1rem;
+  font-size: 1rem;
+  color: var(--gray-800);
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.input-field::placeholder {
+  color: var(--gray-400);
+}
+
+.input-field.has-left-icon {
+  padding-left: 3rem;
+}
+
+.input-field.has-right-icon {
+  padding-right: 3rem;
+}
+
+.input-icon {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gray-400);
+}
+
+.input-icon-left {
+  left: 1rem;
+}
+
+.input-icon-right {
+  right: 1rem;
+}
+
+.input-password-toggle {
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--gray-400);
+  transition: color var(--transition-fast);
+}
+
+.input-password-toggle:hover {
+  color: var(--gray-600);
+}
+
+.input-helper {
+  font-size: 0.75rem;
+  color: var(--gray-500);
+}
+
+.input-helper-error {
+  color: var(--error);
+}
+
+textarea.input-field {
+  min-height: 120px;
+  resize: vertical;
+}
